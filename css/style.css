@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(0,0,0,0.8);
+	display: flex;
+	flex-direction: column;
+	
+}
+
+header {	
+	padding-top: 29px;
+	padding-bottom: 92px;
+	flex: 0 0 auto;
+}
+main {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+.width-cut {
+	padding: 0 10%;
+}
+.colorize {
+	background-color: #f6f2f2;
+}
+nav {
+	background-color: #313030;
+
+	display: flex;	
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	height: 89px;
+}
+nav > .item {
+	color: #e0e0e0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.3px;
+	transition-duration: 0.1s;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 24px 0;
+}
+nav > .item:hover {
+	background-color: #ff3f40;
+}
+
+
+.intro {
+	min-height: 360px;
+
+	padding-bottom: 106px;
+	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.intro-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	margin-top: 1px;
+}
+.intro-pic-link {
+	margin-top: 11px;
+	margin-right: -2px;
+}
+.intro-pic {
+	box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.4);
+	max-width: 100%;
+	height: auto;
+}
+.intro-text > h1 {
+	color: #000;
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 1.2;
+	letter-spacing: 1.4px;
+
+	margin-left: -3px;
+	margin-bottom: 17px;	
+}
+
+.intro-text > p {	
+	
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.8;
+
+	max-width: 57ch;
+	word-wrap: break-word;
+
+	margin-bottom: 7%;
+}
+.button-contact-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: auto;
+	margin-bottom: 17px;
+	margin-left: -1px;
+	border-radius: 0.3em;	
+
+	background-color: #ff2d2d;
+	color: #fff;	
+	font-weight: bolder;
+	font-size: 2ch;
+	letter-spacing: 0.3px;
+
+	height: 55px;
+	width: 227px;
+
+	text-decoration: none;		
+}
+.button-contact-us:hover {
+	text-decoration: underline;
+}
+.footer-background {
+	background-color: #313030;
+	color: #b8b8b8;
+	height: 111px;
+
+	display: flex;
+	justify-content: space-between;
+
+}
+.footer-text {
+	margin-top: 55px;
+	font-size: 14.3px;
+}
+.footer-br {
+	display: none;
+}
+.footer-icons {
+	margin-top: 43px;
+	margin-right: -3px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-icons img {
+	filter: invert(100%);
+	width: 41px;
+	height: auto;
+	padding-left: 10px;
+}
+
+
+@media screen and (max-width: 1375px) {
+	.intro-text > p {
+		max-width: unset;
+	}
+	.intro-text > h1 {
+		text-align: center;
+	}
+	.intro-text {
+		align-items: center;
+		margin-bottom: 3vw;
+	}
+	.intro {
+		justify-content: center;
+	}
+	.intro-br {
+		display: none;
+	}
+}
+@media (max-width: 660px) {
+	header {
+		padding-bottom: 10vw;
+	}
+	.footer-br {
+		display: inline;
+	}
+	.footer-text {
+		margin-top: 43px;
+	}
+	.intro-text > h1 {
+		font-size: 10vw;
+	}
+}
+@media (max-width: 501px) {
+	.footer-icons {
+		margin-top: 10px;
+	}
+}
